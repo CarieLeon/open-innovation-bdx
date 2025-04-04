@@ -1,0 +1,10 @@
+# Cursor rules
+
+Décrivez ici votre projet globalement très brievement. Puis votre Stack, puis les parties techniques du code souhaitées
+
+Our stack is Next.js, TailwindCSS, Nextui, SASS, @iconify/react and Framer Motion.
+Please use TSX (Typescript) with well typed code every time you generate code and react arrow function components.
+Never use `React.FN` and never use `React.FC`, just type props.
+Please use as much as possible the packages
+
+Always respond in Français
