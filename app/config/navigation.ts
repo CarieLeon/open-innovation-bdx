@@ -50,17 +50,14 @@ export const footerNavigation: FooterNavigation = {
     {
       name: "GitHub",
       href: "https://github.com/next-generation-dev",
-      icon: "mdi:github",
-    },
+      },
     {
       name: "GitLab",
       href: "https://gitlab.next-generation.dev",
-      icon: "mdi:gitlab",
     },
     {
       name: "Slack",
       href: "https://next-generation.slack.com",
-      icon: "mdi:slack",
     },
   ],
   resources: [
