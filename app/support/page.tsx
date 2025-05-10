@@ -1,3 +1,4 @@
+"use client";
 import { Card, CardBody, CardHeader, Button, Input, Textarea } from "@heroui/react";
 import { Icon } from "@iconify/react";
 

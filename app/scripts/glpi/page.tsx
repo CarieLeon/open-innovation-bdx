@@ -1,10 +1,12 @@
+"use client";
+
 import { Card, CardBody, CardHeader, Button, Code } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
 const glpiYaml = `version: '3'
 services:
   glpi:
-    image: glpi:latest    
+    image: glpi:latest
     container_name: glpi_pp2
     restart: always
     ports:

@@ -53,15 +53,24 @@ const navigation = [
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      if (typeof window !== 'undefined') {
+        setScrolled(window.scrollY > 50);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Ne pas rendre le composant pendant le SSR
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <motion.header

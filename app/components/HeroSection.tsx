@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@heroui/button";
-import { TextHoverEffect } from "@/(landing-page)/components/ui/text-hover-effect";
+import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 import { useEffect, useState } from "react";
 
 export function HeroSection() {
