@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Input, Textarea } from "@nextui-org/react";
+import { Button, Input, Textarea } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { AnimatedParticles } from "../components/AnimatedParticles";

@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Card, CardBody, CardHeader } from "@nextui-org/react";
+import { Button, Card, CardBody, CardHeader } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
 const nextcloudYaml = `version: '3'

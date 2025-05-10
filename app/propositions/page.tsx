@@ -1,4 +1,4 @@
-import { Card, CardBody, CardHeader, Button, Input, Textarea } from "@nextui-org/react";
+import { Card, CardBody, CardHeader, Button, Input, Textarea } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
 export default function PropositionsPage() {

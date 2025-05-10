@@ -3,9 +3,10 @@
 "use client";
 
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/styles/_index.scss";
 import { Providers } from "./providers";
 import { NavbarComponent } from "./components/Navbar";
+import { Header } from "@/components/layout/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,8 @@ export default function RootLayout({
     <html lang="fr" className="light">
       <body className={inter.className}>
         <Providers>
-          <NavbarComponent />
+          {/* <NavbarComponent /> */}
+          <Header />
           {children}
         </Providers>
       </body>

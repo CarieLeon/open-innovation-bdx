@@ -1,4 +1,4 @@
-import { Card, CardBody, CardHeader, Button, Code } from "@nextui-org/react";
+import { Card, CardBody, CardHeader, Button, Code } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
 const zabbixYaml = `version: '3.7'

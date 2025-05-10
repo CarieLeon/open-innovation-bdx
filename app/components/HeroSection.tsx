@@ -1,10 +1,22 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/button";
 import { TextHoverEffect } from "@/(landing-page)/components/ui/text-hover-effect";
+import { useEffect, useState } from "react";
 
 export function HeroSection() {
+  const [particles, setParticles] = useState<Array<{ x: number; y: number; scale: number }>>([]);
+
+  useEffect(() => {
+    const newParticles = Array.from({ length: 20 }, () => ({
+      x: Math.random() * window.innerWidth,
+      y: Math.random() * window.innerHeight,
+      scale: Math.random() * 2,
+    }));
+    setParticles(newParticles);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background avec gradient animé */}
@@ -12,14 +24,14 @@ export function HeroSection() {
       
       {/* Particules animées */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) => (
+        {particles.map((particle, i) => (
           <motion.div
             key={i}
             className="absolute w-2 h-2 bg-primary/20 rounded-full"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
-              scale: Math.random() * 2,
+              x: particle.x,
+              y: particle.y,
+              scale: particle.scale,
             }}
             animate={{
               y: [null, Math.random() * window.innerHeight],

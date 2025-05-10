@@ -1,4 +1,6 @@
-import { Card, CardBody, CardHeader, CardFooter, Button } from "@nextui-org/react";
+"use client";
+
+import { Card, CardBody, CardHeader, CardFooter, Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
 const solutions = [

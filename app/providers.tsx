@@ -1,8 +1,8 @@
 // Providers est un composant qui permet de fournir les providers pour le site
 "use client";
 
-import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 
 export function Providers({ children }: { children: React.ReactNode }) {
-  return <NextUIProvider>{children}</NextUIProvider>;
+  return <HeroUIProvider>{children}</HeroUIProvider>;
 }

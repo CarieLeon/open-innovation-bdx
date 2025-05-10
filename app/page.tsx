@@ -7,7 +7,7 @@ import { CTASection } from "./components/CTASection";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <div className="relative">
+      <div className="relative overflow-x-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-primary-900" />
         <AnimatedParticles />
 
